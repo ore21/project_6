@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<p>Hello World!</p>
+<p>HTML tag 1!</p>
+<p>HTML tag 2!</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var x = document.getElementsByTagName("p");
+    var y = document.getElementsByTagName("p");
+    var z = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The text in first paragraph (index 0) is: ' + x[0].innerHTML;
+    document.getElementById("demo1").innerHTML = 
+'The text in second paragraph (index 1) is: ' + y[1].innerHTML;
+    document.getElementById("demo2").innerHTML = 
+'The text in third paragraph (index 2) is: ' + z[2].innerHTML;
+</script>
+
+</body>
+</html>
