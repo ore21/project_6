@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements Using document.forms</h2>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  </form> 
+  
+  <form id="frm2" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Clark"><br>
+  Last name: <input type="text" name="lname" value="Kent"><br><br>
+  </form> 
+  
+  <form id="frm3" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Rocky"><br>
+  Last name: <input type="text" name="lname" value="Balboa"><br><br>
+  
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  var x = document.forms["frm1"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+    
+    function myFunction1() {
+  var x = document.forms["frm2"];
+  var text = "";
+  var i;
+  for (i = 0; i < y.length ;i++) {
+    text += y.elements[i].value + "<br>";
+  }
+  document.getElementById("demo1").innerHTML = text;
+}
+    
+    function myFunction2() {
+  var x = document.forms["frm3"];
+  var text = "";
+  var i;
+  for (i = 0; i < z.length ;i++) {
+    text += z.elements[i].value + "<br>";
+  }
+  document.getElementById("demo2").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
