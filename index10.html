@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+<p id="p">This is another paragraph x2.</p>
+</div>
+
+<button onclick="myFunction()">Remove nexted Element</button>
+
+<script>
+    function myFunction() {
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+        var child1 = document.getElementById("p2");
+parent.removeChild(child);
+        parent.removeChild(child1);
+    }
+</script>
+
+</body>
+</html>

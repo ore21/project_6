@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+<p id="p3">This is another paragraph.</p>
+<p id="p4">This is another paragraph.</p>
+</div>
+
+
+<button onclick="myFunction()">Remove Element</button>
+
+<script>
+function myFunction() {
+  var elmnt = document.getElementById("p1");
+    var elmnt1 = document.getElementById("p2");
+    var elmnt2 = document.getElementById("p3");
+  elmnt.remove();
+    elmnt1.remove();
+    elmnt2.remove();
+}
+</script>
+
+</body>
+</html>
